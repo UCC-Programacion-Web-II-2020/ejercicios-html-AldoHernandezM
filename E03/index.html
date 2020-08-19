@@ -11,27 +11,28 @@
 
 <form action="http://servicios.ver.ucc.mx/procesar.php" method="get">
 <fieldset>
-    <legend>Datos Personales</legend>
-    <label for="nombre">Nombre: </label> <br>
+
+    <label for="Nombre">Nombre: </label> <br>
     <input required type="text" name="nombre" id="nombre" placeholder="Nombre"> <br>
     <label for="email">E-mail: </label> <br>
-    <input required type="text" name="email" id="email" placeholder="email"> <br>
+    <input required type="email" name="email" id="email" placeholder="e-mail"> <br>
     <label for="password">Contraseña: </label> <br>
-    <input required type="text" name="password" id="password" placeholder="contraseña"> <br>
+    <input required type="password" name="password" id="password" placeholder="Contraseña"> <br>
 
     <input checked type="radio" value="hombre" id="hombre" name="sexo"> <label for="hombre">Hombre</label> </input>
     <input         type="radio" value="mujer" id="mujer" name="sexo"> <label for="mujer">Mujer</label> </input>
+    <legend>Datos personales</legend>
 </fieldset>
 
 <fieldset>
     <legend>Servicio de noticias</legend>
-    <input type="checkbox" name="noticias[]" value="noticias de politica" id="cbxpolitica"><label for="cbxpolitica">Noticias de política</label> <br>
-    <input type="checkbox" name="noticias[]" value="noticias de espectaculos" id="cbxespectaculos"><label for="cbxespectaculos">Noticias de espectáculos</label> <br>
-    <input type="checkbox" name="noticias[]" value="noticias de tecnologia" id="cbxtec"><label for="cbxtec">Noticias de teconología</label> <br>
+    <input type="checkbox" name="noticias[]" value="Noticias de política"     id="cbxpolitica">    <label for="cbxpolitica">Noticias de política</label> <br>
+    <input type="checkbox" name="noticias[]" value="Noticias de espectáculos" id="cbxespectaculos"><label for="cbxespectaculos">Noticias de espectáculos</label> <br>
+    <input type="checkbox" name="noticias[]" value="Noticias de tecnología"   id="cbxtec">         <label for="cbxtec">Noticias de teconología</label> <br>
     <label for="entga">Método de entrega</label> <br>
     <select name="entga" id="entga">
-        <option value="Desde portal">Desde el portal</option>
-        <option value="Enviar e-mail">Enviar a mi e-mail</option>
+        <option value="Desde el portal">Desde el portal</option>
+        <option value="Enviar a mi e-mail">Enviar a mi e-mail</option>
     </select>
     <label for="observ">Observación</label> <br>
     <textarea name="observ" id="observ" cols="30" rows="5"></textarea>
@@ -40,5 +41,4 @@
 
 </form>
 </body>
-
 </html>
